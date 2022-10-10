@@ -1,5 +1,5 @@
 {
-  "name": "alpha-blog",
+  "name": "test-app-6",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
