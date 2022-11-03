@@ -1,3 +1,3 @@
 # README
-
-Test repo on Ruby on Rails training course
+The front-end: Layout links
+- Layout links
