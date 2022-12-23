@@ -1,8 +1,10 @@
 class PagesController < ApplicationController
+
   def home
-    @message = 'Hellooooo World!'
+    redirect_to articles_path if logged_in?
   end
+
   def about
-    @message = 'This is the About page!'
   end
+
 end
