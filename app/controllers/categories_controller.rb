@@ -4,6 +4,7 @@ class CategoriesController < ApplicationController
   end
   
   def show
+    @category = Category.find(params[:id])
   end
 
   def new 
@@ -11,7 +12,6 @@ class CategoriesController < ApplicationController
   end
 
   def create
-    byebug
     @category = Category.new(category_params)
     if @category.save
       flash[:notice] = "Category was created successfully..."
