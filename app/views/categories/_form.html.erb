@@ -1,11 +1,10 @@
-<h1 class="text-center mt-4">Create a new category</h1>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-10">
       <%= render 'shared/errors', obj: @category %>
       <%= form_with(model: @category, class: "shadow p-3 mb-3 bg-info rounded", local: true) do |f| %>
         <div class="form-group row">
-          <%= f.label :name, "Category name", class: "col-2 col-form-label text-light" %>
+          <%= f.label :name, class: "col-2 col-form-label text-light" %>
           <div class="col-10">
             <%= f.text_field :name, class: "form-control shadow rounded", placeholder: "Name of category" %>
           </div>
@@ -17,7 +16,7 @@
       <% end %>
     </div>
     <div class = "mb-3">
-      <%= link_to '[ Cancel and return to category listing ]', categories_path, class: "text-info" %>
+      <%= link_to '[ Cancel and return to category ]', category_path(@category), class: "text-info" %>
     </div>
   </div>
 </div>
